@@ -31,6 +31,8 @@ public:
 		root->right = new node;
 	}
 
+	//fill method could become a function without parameters since the root is
+	//accessable from the class and so do the `moves` container. It should be easy to fill up the tree
 	void fill(node* currentNode, int index, vector<string> container)
 	{
 		string value = container.at(index);
